@@ -1,0 +1,25 @@
+arunraj@macbook oaqjp-final-project-emb-ai % pwd
+/Users/arunraj/oaqjp-final-project-emb-ai
+arunraj@macbook oaqjp-final-project-emb-ai % python3
+Python 3.13.5 (v3.13.5:6cb20a219a8, Jun 11 2025, 12:23:45) [Clang 16.0.0 (clang-1600.0.26.6)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from EmotionDetection.emotion_detection import emotion_detector
+>>> emotion_detector("I am really mad about this")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/arunraj/oaqjp-final-project-emb-ai/EmotionDetection/emotion_detection.py", line 8, in emotion_detector
+    response = requests.post(url, json = myobj, headers=headers, timeout=10)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/requests/adapters.py", line 507, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='sn-watson-emotion.labs.skillsnetwork.org', port=443): Max retries exceeded with url: /v1/watson.runtime.nlp.v1/NlpService/EmotionPredict (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x106b67230>, 'Connection to sn-watson-emotion.labs.skillsnetwork.org timed out. (connect timeout=10)'))
+>>> exit()
+
+Note: The IBM Watson endpoint (sn-watson-emotion.labs.skillsnetwork.org) is network-restricted to the IBM Skills Network cloud environment and times out when accessed from an external local workstation.

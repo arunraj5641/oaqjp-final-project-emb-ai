@@ -1,0 +1,7 @@
+arunraj@macbook oaqjp-final-project-emb-ai % pwd
+/Users/arunraj/oaqjp-final-project-emb-ai
+arunraj@macbook oaqjp-final-project-emb-ai % pylint server.py
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+

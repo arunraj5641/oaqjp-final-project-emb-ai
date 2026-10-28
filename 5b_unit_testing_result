@@ -1,0 +1,20 @@
+arunraj@macbook oaqjp-final-project-emb-ai % pwd
+/Users/arunraj/oaqjp-final-project-emb-ai
+arunraj@macbook oaqjp-final-project-emb-ai % python3 test_emotion_detection.py -v
+test_anger (__main__.TestEmotionDetection.test_anger)
+Test dominant emotion detection for anger. ... ok
+test_disgust (__main__.TestEmotionDetection.test_disgust)
+Test dominant emotion detection for disgust. ... ok
+test_error_handling_status_400 (__main__.TestEmotionDetection.test_error_handling_status_400)
+Test handling of HTTP 400 / blank input returning None for all emotion fields. ... ok
+test_fear (__main__.TestEmotionDetection.test_fear)
+Test dominant emotion detection for fear. ... ok
+test_joy (__main__.TestEmotionDetection.test_joy)
+Test dominant emotion detection for joy. ... ok
+test_sadness (__main__.TestEmotionDetection.test_sadness)
+Test dominant emotion detection for sadness. ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK

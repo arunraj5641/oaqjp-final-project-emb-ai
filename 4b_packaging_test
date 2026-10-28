@@ -1,0 +1,14 @@
+arunraj@macbook oaqjp-final-project-emb-ai % pwd
+/Users/arunraj/oaqjp-final-project-emb-ai
+arunraj@macbook oaqjp-final-project-emb-ai % python3
+Python 3.13.5 (v3.13.5:6cb20a219a8, Jun 11 2025, 12:23:45) [Clang 16.0.0 (clang-1600.0.26.6)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from EmotionDetection.emotion_detection import emotion_detector
+>>> emotion_detector
+<function emotion_detector at 0x10274e480>
+>>> from EmotionDetection import emotion_detector as ed_pkg
+>>> ed_pkg
+<function emotion_detector at 0x10274e480>
+>>> emotion_detector is ed_pkg
+True
+>>> exit()
